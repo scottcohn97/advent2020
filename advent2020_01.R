@@ -55,14 +55,16 @@ find2sum(target = 2020, list = expense)
 library(sqldf)
 
 sqldf('
-  SELECT 
-      (i.x * j.x * k.x) AS solution
-  FROM expense i 
-  JOIN expense j
-  JOIN expense k 
-  WHERE i.x + j.x + k.x = 2020 
-  LIMIT 1;'
-)
+
+SELECT 
+    (i.x * j.x * k.x) AS solution
+FROM expense i 
+JOIN expense j
+JOIN expense k 
+WHERE i.x + j.x + k.x = 2020 
+LIMIT 1;
+
+')
 
 
 
