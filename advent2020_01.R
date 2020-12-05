@@ -2,13 +2,13 @@
 #' Advent of Code Day 1
 #' Dec 4
 
-#' Goal: 
-#' Find pair that sum to 2020
-#' Then multiply those two numbers together
-
 ##########
 # Part 1 #
 ##########
+
+#' Goal: 
+#' Find pair that sum to 2020
+#' Then multiply those two numbers together
 
 # Load data
 expense <- read.delim("data/day01.txt", header = FALSE, col.names = c("x"))
@@ -47,6 +47,10 @@ find2sum(target = 2020, list = expense)
 ##########
 # Part 2 #
 ##########
+
+#' Goal: 
+#' Find three numbers that sum to 2020
+#' Then multiply those numbers together
 
 library(sqldf)
 
